@@ -1,0 +1,2 @@
+# Coderator Discord Bot
+
