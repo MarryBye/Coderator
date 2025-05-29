@@ -4,7 +4,7 @@ from discord.ext import commands
 from discord import app_commands
 
 from core.config import Config
-from gemini import gemini_client
+from core.integrations.gemini import gemini_client
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
