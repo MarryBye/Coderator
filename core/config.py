@@ -31,6 +31,12 @@ class Config:
         }
     ]
     
+    GEMINI_CONTEXT = """Напиши 1 смешное описание к этому сообщению. 
+                        Только результат, без комментариев. 
+                        Также, смотри на картинки, если они приложены к запросу. 
+                        Если нет, то просто напиши смешное описание к тексту запроса.
+                        Сообщение пользователя:\n\n%s"""
+    
     DATABASE_DRIVER = "postgresql+psycopg2"
     DATABASE_USER = os.getenv("DATABASE_USER")
     DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
